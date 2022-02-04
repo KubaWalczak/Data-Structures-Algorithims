@@ -14,7 +14,9 @@ class Graph:
         self.adjacentList[node1].append(node2)
         self.adjacentList[node2].append(node1)
 
-
+    def printgraph(self):
+        for k, v in self.adjacentList.items():
+            print(f'{k} --> {sorted(v)}')
 
 
 newGraph = Graph()
@@ -34,5 +36,5 @@ newGraph.addEdge('2','4')
 newGraph.addEdge('3','4')
 newGraph.addEdge('4','5')
 newGraph.addEdge('5','6')
-print(newGraph.adjacentList)
+newGraph.printgraph()
 
