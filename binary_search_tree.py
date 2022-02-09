@@ -64,14 +64,19 @@ class BinarySearchTree:
 
 
 
+tree = BinarySearchTree()
 
+tree.insert(10)
+tree.insert(4)
+tree.insert(14)
+tree.insert(6)
+tree.insert(2)
+tree.insert(77)
+tree.insert(13)
+print(tree.search(6))
 
-
-a = BinarySearchTree()
-
-a.insert(10)
-a.insert(12)
-a.insert(14)
-a.insert(6)
-a.insert(8)
-print(a.search(6))
+"""
+          10
+    4          14
+ 2      6    13     77
+"""
